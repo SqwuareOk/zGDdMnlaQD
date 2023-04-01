@@ -15,13 +15,15 @@
 
 <body>
     <div id='main'>
+       <div id='text' ><h1> Yeeee bus that nut challenge </h1></div>
         <div id="pfp">
-            <audio id="audio-player" controls>
-                <source src="audio.mp3" type="audio/mpeg">
-        Your browser does not support the audio tag.
-            </audio>
+           <!--<audio id="audio-player" controls>--> 
+               <!-- <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag. 
+            </audio>-->
         </div>
     </div>
+    
 
 
 
@@ -34,7 +36,28 @@
 
 <style>
 
-    #audio-player {
+
+#text {
+  float: left;
+  color: #fff;
+  position: absolute;
+        top: 50%;
+        right: 20%;
+}
+
+        header{
+            background-color: #333;
+            color: #fff;
+            text-align: left;
+            padding: 200px;
+        }
+
+        h1 {
+             margin: 0;
+             font-size: 2.5em;
+        }
+
+        #audio-player {
         display: block;
         margin: 0 auto;
         width: 400px;
@@ -46,7 +69,7 @@
         top: 200%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
+       } 
 
     body {
         background-color: rgb(255, 254, 255);
@@ -61,7 +84,7 @@
         max-width: 100px;
         max-height: 100;
         margin: 0 auto;
-        padding: 300px;
+        padding: 400px;
         background-color: #333;
         box-shadow: 0px 0px 50px #333;
         position: absolute;
@@ -78,24 +101,17 @@
         background-repeat: no-repeat, repeat;
         background-size: cover;
         background-size: 1;
-        width: 95px;
-        height: 95px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         margin-right: 20px;
         position: absolute;
-        top: 20px;
-        right: 38.5%;
+        top: 10%;
+        right: 38%;
+        
         
     }
-    h1 {
-        font-size: 36px;
-        text-align: center;
-        margin-top: 0;
-      }
-      p {
-        font-size: 20px;
-        text-align: justify;
-      }
+
 
 
 
