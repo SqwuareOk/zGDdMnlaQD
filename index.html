@@ -1,19 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scroll and Open Animations</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="app.js"></script>
-  </head>
+<html>
+<head>
+  <title>SqwuareWare</title>
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
 
-  <body>
-    <div class="container">
-        <h1>Heading</h1>
-        <p>Some text...</p>
-        <h2>Subheading</h2>
-        <p>More text...</p>
-      </div>
-  </body>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #202020;
+    }
+
+    main {
+      flex: 1;
+      margin: 20px;
+    }
+
+    .dark-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 80px;
+      background-color: #171717;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .icon-bar {
+      position: absolute;
+      bottom: 10px;
+      left: 27px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #ffffff;
+    }
+
+    .icon-bar i {
+      margin-bottom: 10px;
+      font-size: 20px;
+      color:  #535353;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .icon-bar i:hover {
+      color: #ffffff; 
+    }
+
+    .center-icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .center-icons i {
+      margin-bottom: 40px; 
+      font-size: 20px;
+      color: #535353;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    .center-icons i:hover {
+      color: #ffffff; 
+    }
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="dark-bar">
+    <div class="logo">
+      
+    </div>
+    <div class="icon-bar">
+      <a href="https://www.tiktok.com/@goonmeiser" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://discord.gg/fKUH5hhQFK" target="_blank"><i class="fab fa-discord"></i></a>
+      <a href="https://www.youtube.com/channel/UCLuZbyqGJbq-DeCJQePmHOg" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="center-icons">
+      <a href="#"><i class="far fa-eye"></i></a>
+      <a href="#"><i class="fas fa-home"></i></a>
+      <a href="#"><i class="far fa-envelope"></i></a>
+    </div>
+  </div>
+  <main>
+
+  </main>
+</body>
 </html>
